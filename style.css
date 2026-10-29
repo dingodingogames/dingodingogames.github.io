@@ -1,0 +1,27 @@
+:root{--bg:#F6F1E7;--surface:#FFFBF3;--ink:#1F1A15;--muted:#6A5F52;--rule:#E2D8C6;--accent:#E2482A;--display:"Inter Tight","Helvetica Neue",Arial,sans-serif;--body:"Source Serif 4",Georgia,"Times New Roman",serif;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#141416;--surface:#1B1B1E;--ink:#EFEBE4;--muted:#A39C92;--rule:#2E2E33;--accent:#FF7454;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 var(--body)}
+.page{max-width:720px;margin:0 auto;padding:56px 16px 80px}
+header{display:grid;gap:10px;padding-bottom:28px;border-bottom:1px solid var(--rule);margin-bottom:32px}
+.mark{display:flex;align-items:center;gap:10px;font:600 13px/1 var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--accent);text-decoration:none}
+.mark svg{width:22px;height:22px}
+h1{font:600 clamp(32px,6vw,46px)/1.08 var(--display);letter-spacing:-.02em;margin:0}
+.meta{font:500 14px/1.5 var(--display);color:var(--muted);margin:0}
+.lead{font-size:19px;margin:0 0 8px}
+section{display:grid;grid-template-columns:44px 1fr;gap:0 12px;padding:22px 0;border-top:1px solid var(--rule)}
+section:first-of-type{border-top:0}
+.n{font:600 14px/2.1 var(--display);color:var(--accent)}
+section>div{min-width:0}
+h2{font:600 21px/1.3 var(--display);margin:0 0 8px;letter-spacing:-.01em}
+p,li{margin:0 0 10px;max-width:65ch}
+ul,ol{margin:0 0 10px;padding-left:20px}
+strong{font-weight:600}
+a{color:var(--accent);text-underline-offset:3px}
+.contact{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:16px 18px;display:grid;gap:4px}
+.contact .label{font:600 12px/1 var(--display);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.contact .email{font:600 18px/1.4 var(--display);word-break:break-all}
+.cta{display:inline-block;margin-top:18px;padding:14px 22px;border-radius:999px;background:var(--accent);color:#fff;font:600 16px/1 var(--display);text-decoration:none}
+.links{display:flex;gap:20px;flex-wrap:wrap;font:500 14px/1.5 var(--display)}
+footer{margin-top:40px;font:500 13px/1.5 var(--display);color:var(--muted)}
+@media (max-width:480px){section{grid-template-columns:1fr}.n{line-height:1.4}}
